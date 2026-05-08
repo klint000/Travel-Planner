@@ -38,7 +38,9 @@ public partial class RegistrationPage : Window
                 return;
             }
 
-            DatabaseService.RegisterUser(username, email, password);
+            AuthenticatedUser user = DatabaseService.RegisterUser(username, email, password);
+            UserSession.SetCurrentUser(user);
+
             MessageBox.Show("Регистрация успешно выполнена.", "Регистрация", MessageBoxButton.OK, MessageBoxImage.Information);
 
             CatalogPage catalogPage = new();

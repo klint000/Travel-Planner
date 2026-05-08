@@ -1,0 +1,101 @@
+<Window x:Class="Travel_Planner.AdminPanelPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Админ-панель"
+        Height="700"
+        Width="1080"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource PrimaryBackgroundBrush}">
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Админ-панель" Style="{StaticResource HeaderTextStyle}" Margin="0,0,0,14"/>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Управление пользователями">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBox x:Name="UserSearchTextBox" Width="260" Height="34" TextChanged="UserSearchTextBox_TextChanged"/>
+                        <Button Content="Обновить" Width="110" Height="34" Margin="10,0,0,0" Click="RefreshUsersButton_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="UsersDataGrid"
+                              Grid.Row="1"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              SelectionMode="Single"
+                              CanUserAddRows="False"
+                              Margin="0,0,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="70"/>
+                            <DataGridTextColumn Header="ФИО" Binding="{Binding FullName}" Width="*"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="220"/>
+                            <DataGridTextColumn Header="Роль" Binding="{Binding RoleNameRu}" Width="160"/>
+                            <DataGridCheckBoxColumn Header="Заблокирован" Binding="{Binding IsBlocked}" Width="130"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                        <TextBlock Text="Новая роль:" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <ComboBox x:Name="RoleComboBox" Width="180" Height="34" VerticalAlignment="Center">
+                            <ComboBoxItem Content="Пользователь" Tag="1" IsSelected="True"/>
+                            <ComboBoxItem Content="Менеджер" Tag="2"/>
+                            <ComboBoxItem Content="Администратор" Tag="3"/>
+                        </ComboBox>
+                        <Button Content="Применить роль" Width="130" Height="34" Margin="10,0,0,0" Click="ApplyRoleButton_Click"/>
+                        <Button Content="Заблокировать/Разблокировать" Width="210" Height="34" Margin="10,0,0,0" Click="ToggleBlockButton_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Системная аналитика">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:Name="TotalTripsTextBlock" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,8"/>
+
+                    <GroupBox Header="Количество поездок по категориям" Grid.Row="1" Margin="0,0,0,10">
+                        <ListView x:Name="CategoryStatsListView" Height="140">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Категория" DisplayMemberBinding="{Binding Name}" Width="280"/>
+                                    <GridViewColumn Header="Количество" DisplayMemberBinding="{Binding Count}" Width="120"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+
+                    <GroupBox Header="Топ-5 последних добавленных поездок" Grid.Row="2" Margin="0,0,0,10">
+                        <ListView x:Name="TopTripsListView" Height="170">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="70"/>
+                                    <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Name}" Width="360"/>
+                                    <GridViewColumn Header="Дата начала" DisplayMemberBinding="{Binding StartDate, StringFormat={}{0:dd.MM.yyyy}}" Width="160"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+
+                    <Border Grid.Row="3" Background="White" Padding="12" CornerRadius="8" BorderBrush="#FFD1D9E0" BorderThickness="1">
+                        <TextBlock x:Name="UserStatsTextBlock" FontSize="14" TextWrapping="Wrap"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

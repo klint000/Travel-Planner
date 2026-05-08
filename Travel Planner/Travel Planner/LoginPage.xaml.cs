@@ -23,14 +23,22 @@ public partial class LoginPage : Window
 
         try
         {
-            bool isValid = DatabaseService.ValidateUserCredentials(login, password);
-            if (!isValid)
+            AuthenticatedUser? user = DatabaseService.AuthenticateUser(login, password);
+            if (user is null)
             {
                 MessageBox.Show("Неверный логин/email или пароль.", "Вход", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            MessageBox.Show("Вход выполнен успешно.", "Вход", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (user.IsBlocked)
+            {
+                MessageBox.Show("Учетная запись заблокирована администратором.", "Вход запрещен", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            UserSession.SetCurrentUser(user);
+
+            MessageBox.Show($"Вход выполнен успешно. Роль: {user.RoleNameRu}.", "Вход", MessageBoxButton.OK, MessageBoxImage.Information);
             CatalogPage catalogPage = new();
             catalogPage.Show();
             Close();

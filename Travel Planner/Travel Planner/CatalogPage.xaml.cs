@@ -10,7 +10,30 @@ public partial class CatalogPage : Window
     public CatalogPage()
     {
         InitializeComponent();
+
+        if (!UserSession.IsAuthenticated)
+        {
+            LoginPage loginPage = new();
+            loginPage.Show();
+            Close();
+            return;
+        }
+
+        ApplyRoleVisibility();
         LoadCatalog();
+    }
+
+    private void ApplyRoleVisibility()
+    {
+        bool canManage = UserSession.IsManagerOrAdmin;
+
+        AddButton.Visibility = canManage ? Visibility.Visible : Visibility.Collapsed;
+        EditButton.Visibility = canManage ? Visibility.Visible : Visibility.Collapsed;
+        DeleteButton.Visibility = canManage ? Visibility.Visible : Visibility.Collapsed;
+        AdminPanelButton.Visibility = UserSession.IsAdmin ? Visibility.Visible : Visibility.Collapsed;
+
+        string roleLabel = UserSession.CurrentUser?.RoleNameRu ?? "Пользователь";
+        HeaderTextBlock.Text = $"Каталог поездок ({roleLabel})";
     }
 
     private void LoadCatalog()
@@ -41,13 +64,36 @@ public partial class CatalogPage : Window
 
     private void LogoutButton_Click(object sender, RoutedEventArgs e)
     {
+        UserSession.Logout();
         LoginPage loginPage = new();
         loginPage.Show();
         Close();
     }
 
+    private void AdminPanelButton_Click(object sender, RoutedEventArgs e)
+    {
+        AdminPanelPage adminPage = new();
+        adminPage.ShowDialog();
+    }
+
+    private bool EnsureManagerAccess()
+    {
+        if (UserSession.IsManagerOrAdmin)
+        {
+            return true;
+        }
+
+        MessageBox.Show("Недостаточно прав для выполнения операции.", "Доступ запрещен", MessageBoxButton.OK, MessageBoxImage.Warning);
+        return false;
+    }
+
     private void AddButton_Click(object sender, RoutedEventArgs e)
     {
+        if (!EnsureManagerAccess())
+        {
+            return;
+        }
+
         AddEditPage page = new();
         if (page.ShowDialog() == true)
         {
@@ -57,6 +103,11 @@ public partial class CatalogPage : Window
 
     private void EditButton_Click(object sender, RoutedEventArgs e)
     {
+        if (!EnsureManagerAccess())
+        {
+            return;
+        }
+
         if (CatalogListView.SelectedItem is not TripCatalogItem selectedItem)
         {
             MessageBox.Show("Выберите запись для редактирования.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -79,6 +130,11 @@ public partial class CatalogPage : Window
 
     private void DeleteButton_Click(object sender, RoutedEventArgs e)
     {
+        if (!EnsureManagerAccess())
+        {
+            return;
+        }
+
         if (CatalogListView.SelectedItem is not TripCatalogItem selectedItem)
         {
             MessageBox.Show("Выберите запись для удаления.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Information);

@@ -16,7 +16,7 @@ public partial class AddEditPage : Window
     public AddEditPage()
     {
         InitializeComponent();
-        UserIdTextBox.Text = "1";
+        UserIdTextBox.Text = (UserSession.CurrentUser?.Id ?? 1).ToString(CultureInfo.InvariantCulture);
         StartDatePicker.SelectedDate = DateTime.Today;
         EndDatePicker.SelectedDate = DateTime.Today;
     }

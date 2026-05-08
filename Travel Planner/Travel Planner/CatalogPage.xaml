@@ -14,15 +14,24 @@
         </Grid.RowDefinitions>
 
         <DockPanel Margin="0,0,0,18">
-            <TextBlock Text="Каталог поездок" Style="{StaticResource HeaderTextStyle}" Margin="0,0,0,0" HorizontalAlignment="Left"/>
-            <Button Content="Выйти"
-                    DockPanel.Dock="Right"
-                    Width="100"
-                    Height="38"
-                    VerticalAlignment="Center"
-                    Style="{StaticResource PrimaryButtonStyle}"
-                    Margin="12,0,0,0"
-                    Click="LogoutButton_Click"/>
+            <TextBlock x:Name="HeaderTextBlock" Text="Каталог поездок" Style="{StaticResource HeaderTextStyle}" Margin="0,0,0,0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Center">
+                <Button x:Name="AdminPanelButton"
+                        Content="Админ-панель"
+                        Width="130"
+                        Height="38"
+                        Margin="0,0,10,0"
+                        Visibility="Collapsed"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Click="AdminPanelButton_Click"/>
+                <Button Content="Выйти"
+                        Width="100"
+                        Height="38"
+                        VerticalAlignment="Center"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Margin="0"
+                        Click="LogoutButton_Click"/>
+            </StackPanel>
         </DockPanel>
 
         <Border Grid.Row="1"
@@ -48,9 +57,9 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Column="0" Content="Добавить" Width="100" Height="36" Margin="0" Click="AddButton_Click"/>
-                <Button Grid.Column="1" Content="Редактировать" Width="120" Height="36" Margin="10,0,0,0" Click="EditButton_Click"/>
-                <Button Grid.Column="2" Content="Удалить" Width="100" Height="36" Margin="10,0,0,0" Click="DeleteButton_Click"/>
+                <Button x:Name="AddButton" Grid.Column="0" Content="Добавить" Width="100" Height="36" Margin="0" Click="AddButton_Click"/>
+                <Button x:Name="EditButton" Grid.Column="1" Content="Редактировать" Width="120" Height="36" Margin="10,0,0,0" Click="EditButton_Click"/>
+                <Button x:Name="DeleteButton" Grid.Column="2" Content="Удалить" Width="100" Height="36" Margin="10,0,0,0" Click="DeleteButton_Click"/>
 
                 <TextBox Grid.Column="4"
                          x:Name="SearchTextBox"

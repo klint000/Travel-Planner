@@ -72,3 +72,5 @@ C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.deps.json
 C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.runtimeconfig.json
 C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.dll
 C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.pdb
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\AdminPanelPage.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\AdminPanelPage.g.cs
