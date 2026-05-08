@@ -1,0 +1,67 @@
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Travel Planner.exe
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Travel Planner.deps.json
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Travel Planner.runtimeconfig.json
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Travel Planner.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Travel Planner.pdb
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\App.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner_MarkupCompile.cache
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner_MarkupCompile.lref
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.g.resources
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.AssemblyInfoInputs.cache
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.AssemblyInfo.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.csproj.CoreCompileInputs.cache
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.sourcelink.json
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\refint\Travel Planner.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.pdb
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.genruntimeconfig.cache
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\ref\Travel Planner.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\LoginPage.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\RegistrationPage.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\App.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\LoginPage.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\RegistrationPage.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner_Content.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel Planner.csproj.AssemblyReference.cache
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\Travel P.28A96291.Up2Date
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\CatalogPage.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\CatalogPage.g.cs
