@@ -113,6 +113,7 @@ CREATE TABLE [dbo].[trips](
 	[start_date] [date] NOT NULL,
 	[end_date] [date] NOT NULL,
 	[budget] [decimal](10, 2) NULL,
+	[image] [varbinary](max) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
@@ -6285,6 +6286,10 @@ GO
 INSERT [dbo].[trips] ([id], [user_id], [name], [start_date], [end_date], [budget]) VALUES (120, 1, N'Путешествие в  #120', CAST(N'2023-04-26' AS Date), CAST(N'2023-07-25' AS Date), CAST(5204.00 AS Decimal(10, 2)))
 GO
 SET IDENTITY_INSERT [dbo].[trips] OFF
+GO
+UPDATE [dbo].[trips]
+SET [image] = CONVERT(VARBINARY(MAX), CONCAT(N'trip-image-', CAST([id] AS NVARCHAR(10))))
+WHERE [image] IS NULL;
 GO
 SET IDENTITY_INSERT [dbo].[users] ON 
 GO
