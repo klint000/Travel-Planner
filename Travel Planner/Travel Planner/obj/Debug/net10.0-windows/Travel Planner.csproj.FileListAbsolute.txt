@@ -65,3 +65,10 @@ C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\r
 C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\CatalogPage.baml
 C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\CatalogPage.g.cs
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\AddEditPage.baml
+C:\Dev\sharaga\pz13-18\Travel Planner\Travel Planner\obj\Debug\net10.0-windows\AddEditPage.g.cs
+C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.exe
+C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.deps.json
+C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.runtimeconfig.json
+C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.dll
+C:\Dev\sharaga\pz13-18\_build_out\Travel Planner.pdb

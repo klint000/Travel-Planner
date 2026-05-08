@@ -1,0 +1,70 @@
+<Window x:Class="Travel_Planner.AddEditPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавление/редактирование поездки"
+        Height="700"
+        Width="620"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource PrimaryBackgroundBrush}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="TitleTextBlock" Text="Новая запись" Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Left"/>
+
+            <TextBlock Grid.Row="1" Text="Пользователь (ID)" Style="{StaticResource FormLabelStyle}"/>
+            <TextBox Grid.Row="2" x:Name="UserIdTextBox"/>
+
+            <TextBlock Grid.Row="3" Text="Название" Style="{StaticResource FormLabelStyle}"/>
+            <TextBox Grid.Row="4" x:Name="NameTextBox"/>
+
+            <Grid Grid.Row="5" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Дата начала" Style="{StaticResource FormLabelStyle}" Margin="0,0,0,6"/>
+                    <DatePicker x:Name="StartDatePicker" Height="36"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Дата окончания" Style="{StaticResource FormLabelStyle}" Margin="0,0,0,6"/>
+                    <DatePicker x:Name="EndDatePicker" Height="36"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Grid.Row="6" Text="Бюджет" Style="{StaticResource FormLabelStyle}"/>
+            <TextBox Grid.Row="7" x:Name="BudgetTextBox"/>
+
+            <Border Grid.Row="8" Margin="0,16,0,0" Padding="14" Background="{StaticResource SurfaceBrush}" BorderBrush="#FFD1D9E0" BorderThickness="1" CornerRadius="10">
+                <StackPanel>
+                    <TextBlock Text="Изображение" Style="{StaticResource FormLabelStyle}" Margin="0,0,0,8"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Загрузить" Width="120" Height="34" Click="UploadImageButton_Click"/>
+                        <Button Content="Очистить" Width="100" Height="34" Margin="10,0,0,0" Click="ClearImageButton_Click"/>
+                    </StackPanel>
+                    <Border Margin="0,12,0,0" Height="240" Background="#FFEAF4F7" CornerRadius="8">
+                        <Image x:Name="PreviewImage" Stretch="Uniform"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+
+            <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button Content="Отмена" Width="110" Height="38" Margin="0,0,10,0" Click="CancelButton_Click"/>
+                <Button Content="Сохранить" Width="120" Height="38" Click="SaveButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

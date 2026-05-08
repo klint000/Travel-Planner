@@ -9,6 +9,7 @@
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -24,7 +25,73 @@
                     Click="LogoutButton_Click"/>
         </DockPanel>
 
-        <ListView Grid.Row="1"
+        <Border Grid.Row="1"
+                Background="{StaticResource SurfaceBrush}"
+                CornerRadius="10"
+                BorderBrush="#FFD1D9E0"
+                BorderThickness="1"
+                Padding="12"
+                Margin="0,0,0,14">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="24"/>
+                    <ColumnDefinition Width="230"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="190"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Content="Добавить" Width="100" Height="36" Margin="0" Click="AddButton_Click"/>
+                <Button Grid.Column="1" Content="Редактировать" Width="120" Height="36" Margin="10,0,0,0" Click="EditButton_Click"/>
+                <Button Grid.Column="2" Content="Удалить" Width="100" Height="36" Margin="10,0,0,0" Click="DeleteButton_Click"/>
+
+                <TextBox Grid.Column="4"
+                         x:Name="SearchTextBox"
+                         VerticalAlignment="Center"
+                         Height="36"
+                         ToolTip="Поиск по названию"
+                         TextChanged="FilterOrSortChanged"/>
+
+                <ComboBox Grid.Column="6"
+                          x:Name="DifficultyFilterComboBox"
+                          VerticalAlignment="Center"
+                          Height="36"
+                          SelectionChanged="FilterOrSortChanged">
+                    <ComboBoxItem Content="Все" IsSelected="True"/>
+                    <ComboBoxItem Content="Легко"/>
+                    <ComboBoxItem Content="Средне"/>
+                    <ComboBoxItem Content="Сложно"/>
+                </ComboBox>
+
+                <ComboBox Grid.Column="8"
+                          x:Name="SortFieldComboBox"
+                          VerticalAlignment="Center"
+                          Height="36"
+                          SelectionChanged="FilterOrSortChanged">
+                    <ComboBoxItem Content="Название" IsSelected="True"/>
+                    <ComboBoxItem Content="Дата начала"/>
+                    <ComboBoxItem Content="Бюджет"/>
+                </ComboBox>
+
+                <ComboBox Grid.Column="10"
+                          x:Name="SortDirectionComboBox"
+                          VerticalAlignment="Center"
+                          Height="36"
+                          SelectionChanged="FilterOrSortChanged">
+                    <ComboBoxItem Content="По возрастанию" IsSelected="True"/>
+                    <ComboBoxItem Content="По убыванию"/>
+                </ComboBox>
+            </Grid>
+        </Border>
+
+        <ListView Grid.Row="2"
                   x:Name="CatalogListView"
                   Background="Transparent"
                   BorderThickness="0"
